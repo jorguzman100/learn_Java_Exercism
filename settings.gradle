@@ -1,0 +1,11 @@
+rootProject.name = 'learn_Java_Exercism'
+
+// Incluye automáticamente todos los ejercicios bajo /java/<ejercicio>
+def exercisesDir = new File(rootDir, 'java')
+if (exercisesDir.exists()) {
+    exercisesDir.eachDir { d ->
+        if (new File(d, 'build.gradle').exists() || new File(d, 'build.gradle.kts').exists()) {
+            includeBuild(d)   // composite build
+        }
+    }
+}
