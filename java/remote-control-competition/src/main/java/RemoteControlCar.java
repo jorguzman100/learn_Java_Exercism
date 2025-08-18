@@ -4,7 +4,6 @@ import java.util.List;
 
 // 1. Implement the Interface
 public interface RemoteControlCar {
-    // TODO implement the RemoteControlCar interface
     void drive();
     int getDistanceTravelled();
 }

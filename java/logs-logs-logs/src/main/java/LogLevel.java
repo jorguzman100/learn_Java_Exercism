@@ -1,5 +1,5 @@
 public enum LogLevel {
-    // TODO: define members for each log level
+    // 0: define members for each log level
     TRACE("TRC", 1),
     DEBUG("DBG", 2),
     INFO("INF", 4),
